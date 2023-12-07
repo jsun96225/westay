@@ -6,10 +6,13 @@
     <artifactId>westay-common</artifactId>
     <packaging>jar</packaging>
     <description>web common module</description>
-
     <parent>
         <groupId>com.westay</groupId>
         <artifactId>westay</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+    </build>
 </project>

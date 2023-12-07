@@ -6,10 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="westay-admin" />
         <module name="westay-common" />
         <module name="westay-dynamic-datasource" />
+        <module name="westay-admin" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="westay-admin" options="-parameters" />
+      <module name="westay-common" options="-parameters" />
+      <module name="westay-dynamic-datasource" options="-parameters" />
+    </option>
   </component>
 </project>
