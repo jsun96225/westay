@@ -4,19 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ac30510-32be-4ab2-a695-9f7c358019d1" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="4ac30510-32be-4ab2-a695-9f7c358019d1" name="Changes" comment="pom">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/structure.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/aspect/RedisAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/constant/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/convert/DateConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/dao/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/exception/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/exception/ExceptionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/exception/RenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/page/PageData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/redis/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/redis/RedisKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/redis/RedisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/service/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/service/CrudService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/service/impl/BaseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/service/impl/CrudServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/utils/MessageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/utils/SpringContextUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/resources/i18n/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/resources/i18n/validation.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/65d4cc5a-91c2-4762-8748-ff84ee24b100.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/65d4cc5a-91c2-4762-8748-ff84ee24b100.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/65d4cc5a-91c2-4762-8748-ff84ee24b100/storage_v2/_src_/schema/westay.J_7V0A.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/65d4cc5a-91c2-4762-8748-ff84ee24b100/storage_v2/_src_/schema/westay.J_7V0A.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/westay-admin/database/MySQL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/database/MySQL.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/westay-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/westay-admin/target/classes/com/westay/live/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/westay-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/westay-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/westay-dynamic-datasource/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/westay-dynamic-datasource/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +45,15 @@
   <component name="ChangesViewManager">
     <option name="groupingKeys">
       <option value="module" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
     </option>
   </component>
   <component name="Git.Settings">
@@ -70,39 +98,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jialongsun/Desktop/WeStay/westay-admin/src/main/java/com/westay/live/modules&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/jialongsun/Desktop/WeStay/westay-dynamic-datasource/src/main/java/com/westay/live/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "/Users/jialongsun/Desktop/WeStay/westay-common/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/jialongsun/Desktop/WeStay/westay-dynamic-datasource/src/main/java/com/westay/live/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;redshift&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redshift",
+      "mysql"
     ],
-    &quot;RunConfigurationTargetLRU&quot;: [
-      &quot;65d4cc5a-91c2-4762-8748-ff84ee24b100/schema/\&quot;westay\&quot;&quot;
+    "RunConfigurationTargetLRU": [
+      "65d4cc5a-91c2-4762-8748-ff84ee24b100/schema/\"westay\""
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/westay-common/src/main/resources" />
+      <recent name="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common" />
+      <recent name="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/dao" />
       <recent name="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.westay.common.service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.westay.common.utils" />
     </key>
   </component>
   <component name="RunManager" selected="Database Script.MySQL.sql">
@@ -140,7 +177,8 @@
       <option name="presentableId" value="Default" />
       <updated>1701395524299</updated>
       <workItem from="1701395525340" duration="11979000" />
-      <workItem from="1701917643636" duration="4968000" />
+      <workItem from="1701917643636" duration="11732000" />
+      <workItem from="1701939560347" duration="3567000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -182,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701412462793</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="pom">
+      <option name="closed" value="true" />
+      <created>1701923303996</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701923303996</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +247,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="pom" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom" />
   </component>
 </project>
