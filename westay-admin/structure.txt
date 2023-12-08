@@ -9,7 +9,38 @@ westay-admin
                             └── sys 系统
                             └── admin 用户
                             └── log 日志
-                            └── citycard 城市卡
+                            └── city card 城市卡
                             └── oss 文件上传
                             └── security 安全
 
+
+-----------------------------done-------------------------------
+
+
+westay-common
+└── src
+    └── main
+        └── java
+            └── com
+                └── westay
+                    └── common
+                            └── aspect - 切面逻辑
+                            └── constant - 常量定义
+                            └── convert - 数据转换
+                            └── dao - 数据访问
+                            └── entity - 实体类
+                            └── page - 分页工具
+                            └── redis - Redis操作
+                            └── service - 服务层
+                            └── utils - 工具类
+                            └── xss - XSS防护
+                            └── exception - 异常处理
+                            └── ValidatorUtils - 校验工具
+
+
+
+------------------------------need config-----------------------------
+
+
+RedisAspect.java
+XssUtils.java
