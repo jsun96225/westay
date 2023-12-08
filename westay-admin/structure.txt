@@ -41,6 +41,35 @@ westay-common
 
 ------------------------------need config-----------------------------
 
-
 RedisAspect.java
 XssUtils.java
+
+------------------------------Tech stack-----------------------------
+技术栈总结：
+
+后端技术栈:
+- Spring Boot: 构建和运行基于 Spring 的应用程序
+- MyBatis: 数据库操作的持久层框架
+- Hibernate Validator: 实现 Java Bean 验证
+- Redis: 缓存和会话存储的内存数据结构存储系统
+- Maven: 项目管理和构建工具
+- Jsoup: 防止 XSS 攻击的 Java HTML 解析器
+- Hutool: 简化编码工作的 Java 工具类库
+- Hibernate: 对象关系映射和数据访问层
+
+前端技术栈:
+- Vue.js: 构建用户界面的 JavaScript 框架
+- Axios: HTTP 客户端
+
+数据库:
+SQL
+- SQL 数据库: 存储用户数据和其他关系数据
+NoSql
+- MongoDB: 存储城市信息的 NoSQL 数据库
+- Redis: 缓存和会话存储的内存数据结构存储系统
+
+安全和验证:
+- Apache Shiro: 安全性和权限管理
+
+其他工具和技术:
+- Swagger: 生成和文档化 API
