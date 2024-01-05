@@ -8,7 +8,8 @@ CREATE TABLE users (
                        update_time DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                        points INT DEFAULT 0,
                        vip_user TINYINT UNSIGNED,
-                       profile_picture_url VARCHAR(255)
+                       profile_picture_url VARCHAR(255),
+                       status tinyint
 );
 
 -- 角色表 (已有 id，不做修改)
@@ -47,34 +48,54 @@ CREATE TABLE tokens (
                         user_id BIGINT NOT NULL,
                         token VARCHAR(255) NOT NULL,
                         expire_date DATETIME,
+                        update_date DATETIME,
+                        create_date DATETIME,
                         FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
 -- 登录日志 (已有 id，不做修改)
 CREATE TABLE login_logs (
                             id BIGINT AUTO_INCREMENT PRIMARY KEY,
-                            user_id BIGINT,
-                            login_time DATETIME DEFAULT CURRENT_TIMESTAMP,
-                            ip_address VARCHAR(50),
-                            FOREIGN KEY (user_id) REFERENCES users(id)
+                            operation tinyint unsigned,
+                            status tinyint unsigned NOT NULL,
+                            user_agent varchar(500),
+                            ip varchar(39),
+                            creator_name varchar(50),
+                            creator bigint,
+                            create_date datetime,
+                            key idx_status (status),
+                            key idx_create_date (create_date)
 );
 
 -- 操作日志 (已有 id，不做修改)
 CREATE TABLE operation_logs (
                                 id BIGINT AUTO_INCREMENT PRIMARY KEY,
-                                user_id BIGINT,
-                                operation VARCHAR(255),
-                                operation_time DATETIME DEFAULT CURRENT_TIMESTAMP,
-                                FOREIGN KEY (user_id) REFERENCES users(id)
+                                operation            varchar(50) COMMENT '用户操作',
+                                request_uri          varchar(200) COMMENT '请求URI',
+                                request_method       varchar(20) COMMENT '请求方式',
+                                request_params       text COMMENT '请求参数',
+                                request_time         int unsigned NOT NULL COMMENT '请求时长(毫秒)',
+                                user_agent           varchar(500) COMMENT '用户代理',
+                                ip                   varchar(39) COMMENT '操作IP',
+                                status               tinyint unsigned NOT NULL COMMENT '状态  0：失败   1：成功',
+                                creator_name         varchar(50) COMMENT '用户名',
+                                creator              bigint COMMENT '创建者',
+                                create_date          datetime COMMENT '创建时间',
+                                key idx_create_date (create_date)
 );
 
 -- 异常日志 (已有 id，不做修改)
 CREATE TABLE error_logs (
                             id BIGINT AUTO_INCREMENT PRIMARY KEY,
-                            user_id BIGINT,
-                            error_message TEXT,
-                            error_time DATETIME DEFAULT CURRENT_TIMESTAMP,
-                            FOREIGN KEY (user_id) REFERENCES users(id)
+                            request_uri          varchar(200) COMMENT '请求URI',
+                            request_method       varchar(20) COMMENT '请求方式',
+                            request_params       text COMMENT '请求参数',
+                            user_agent           varchar(500) COMMENT '用户代理',
+                            ip                   varchar(39) COMMENT '操作IP',
+                            error_info           text COMMENT '异常信息',
+                            creator              bigint COMMENT '创建者',
+                            create_date          datetime COMMENT '创建时间',
+                            key idx_create_date (create_date)
 );
 
 -- 文件上传 (已有 id，不做修改)
@@ -104,7 +125,8 @@ CREATE TABLE guest_sessions (
 );
 
 -- 初始化角色数据
-INSERT INTO roles (name) VALUES ('普通用户'), ('VIP');
+INSERT INTO roles (name) VALUES ('游客'), ('普通用户'), ('VIP');
+
 
 -- 初始化权限数据（根据实际需求调整）
-INSERT INTO permissions (name) VALUES ('查看页面'), ('编辑资料'), ('访问高级功能'), ('管理用户'), ('查看报告');
+INSERT INTO permissions (name) VALUES ('访问城市卡'), ('查看评论'), ('发表评论'), ('编辑个人信息'), ('签证咨询'), ('一对一客服');

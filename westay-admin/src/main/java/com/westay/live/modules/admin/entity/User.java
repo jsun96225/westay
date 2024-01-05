@@ -38,5 +38,7 @@ public class User extends BaseEntity {
     @TableField("profile_picture_url")
     private String profilePictureUrl;
 
+    private Integer status;
+
     // Getters and Setters
 }

@@ -11,9 +11,14 @@ import java.util.Date;
 @EqualsAndHashCode(callSuper = true)
 @TableName("login_logs")
 public class LoginLog extends BaseEntity {
-    private Long userId;
-    private Date loginTime;
-    private String ipAddress;
+    private static final long serialVersionUID = 1L;
+    private Integer operation;
+    private Integer status;
+    private String userAgent;
+    private String ip;
+    private String creatorName;
+    private Long creator;
+    private Date createDate;
 
     // Getters and Setters
 }

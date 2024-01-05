@@ -11,9 +11,18 @@ import java.util.Date;
 @EqualsAndHashCode(callSuper = true)
 @TableName("operation_logs")
 public class OperationLog extends BaseEntity {
-    private Long userId;
+    private static final long serialVersionUID = 1L;
     private String operation;
-    private Date operationTime;
+    private String requestUri;
+    private String requestMethod;
+    private String requestParams;
+    private Integer requestTime;
+    private String userAgent;
+    private String ip;
+    private Integer status;
+    private String creatorName;
+    private Long creator;
+    private Date createDate;
 
     // Getters and Setters
 }
