@@ -4,6 +4,7 @@ import com.westay.common.exception.ErrorCode;
 import com.westay.common.utils.Result;
 import com.westay.common.validator.AssertUtils;
 import com.westay.common.validator.ValidatorUtils;
+import com.westay.live.modules.log.service.SysLogErrorService;
 import com.westay.live.modules.security.dto.LoginDTO;
 import com.westay.live.modules.security.service.CaptchaService;
 import com.westay.live.modules.security.service.SysUserTokenService;
@@ -27,10 +28,10 @@ import java.util.Date;
 @AllArgsConstructor
 public class LoginController {
 
-    private final UserService sysUserService;
+    private final SysUserService sysUserService;
     private final SysUserTokenService sysUserTokenService;
     private final CaptchaService captchaService;
-    private final LogLoginService sysLogLoginService;
+    private final SysLogErrorService sysLogLoginService;
 
     @GetMapping("captcha")
     @ApiOperation(value = "验证码", produces = "application/octet-stream")
