@@ -4,25 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ac30510-32be-4ab2-a695-9f7c358019d1" name="Changes" comment="log-dao-dto">
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/common/annotation/DataFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/common/annotation/LogOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/common/utils/ExcelUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/controller/SysLogErrorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/controller/SysLogLoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/controller/SysLogOperationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/dto/SysLogErrorDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/dto/SysLogLoginDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/dto/SysLogOperationDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/service/SysLogErrorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/service/SysLogLoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/service/SysLogOperationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/service/impl/SysLogErrorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/service/impl/SysLogLoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/service/impl/SysLogOperationServiceImpl.java" afterDir="false" />
+    <list default="true" id="4ac30510-32be-4ab2-a695-9f7c358019d1" name="Changes" comment="Log-done">
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/enums/UserVipEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/service/Impl/UserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/service/UserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/utils/IpUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/excel/SysLogOperationExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/excel/SysLogOperationExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/westay-admin/database/MySQL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/database/MySQL.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/dao/UserRoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/dao/UserRoleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/enums/UserStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/enums/UserStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/service/SysLogErrorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/service/SysLogErrorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/security/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/security/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/security/service/impl/ShiroServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/security/service/impl/ShiroServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/service/impl/BaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/service/impl/BaseServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +170,7 @@
       <workItem from="1701395525340" duration="11979000" />
       <workItem from="1701917643636" duration="11732000" />
       <workItem from="1701939560347" duration="10931000" />
-      <workItem from="1702858202621" duration="69606000" />
+      <workItem from="1702858202621" duration="86559000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -261,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704413393607</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Log-done">
+      <option name="closed" value="true" />
+      <created>1704416003959</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1704416003959</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +293,7 @@
     <MESSAGE value="common-done-structure-update" />
     <MESSAGE value="entity" />
     <MESSAGE value="log-dao-dto" />
-    <option name="LAST_COMMIT_MESSAGE" value="log-dao-dto" />
+    <MESSAGE value="Log-done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Log-done" />
   </component>
 </project>

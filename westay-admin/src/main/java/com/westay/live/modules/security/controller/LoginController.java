@@ -1,11 +1,19 @@
 package com.westay.live.modules.security.controller;
 
 import com.westay.common.exception.ErrorCode;
+import com.westay.common.exception.RenException;
+import com.westay.common.utils.IpUtils;
 import com.westay.common.utils.Result;
 import com.westay.common.validator.AssertUtils;
 import com.westay.common.validator.ValidatorUtils;
-import com.westay.live.modules.log.service.SysLogErrorService;
+import com.westay.live.modules.admin.dto.UserDTO;
+import com.westay.live.modules.admin.service.UserService;
+import com.westay.live.modules.log.entity.LoginLog;
+import com.westay.live.modules.log.enums.LoginOperationEnum;
+import com.westay.live.modules.log.enums.LoginStatusEnum;
+import com.westay.live.modules.log.service.SysLogLoginService;
 import com.westay.live.modules.security.dto.LoginDTO;
+import com.westay.live.modules.security.password.PasswordUtils;
 import com.westay.live.modules.security.service.CaptchaService;
 import com.westay.live.modules.security.service.SysUserTokenService;
 import io.swagger.annotations.Api;
@@ -17,7 +25,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
+import com.westay.live.modules.admin.enums.UserStatusEnum;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -28,10 +36,10 @@ import java.util.Date;
 @AllArgsConstructor
 public class LoginController {
 
-    private final SysUserService sysUserService;
+    private final UserService sysUserService;
     private final SysUserTokenService sysUserTokenService;
     private final CaptchaService captchaService;
-    private final SysLogErrorService sysLogLoginService;
+    private final SysLogLoginService sysLogLoginService;
 
     @GetMapping("captcha")
     @ApiOperation(value = "验证码", produces = "application/octet-stream")
@@ -58,9 +66,9 @@ public class LoginController {
         }
 
         //用户信息
-        SysUserDTO user = sysUserService.getByUsername(login.getUsername());
+        UserDTO user = sysUserService.getByUsername(login.getUsername());
 
-        SysLogLoginEntity log = new SysLogLoginEntity();
+        LoginLog log = new LoginLog();
         log.setOperation(LoginOperationEnum.LOGIN.value());
         log.setCreateDate(new Date());
         log.setIp(IpUtils.getIpAddr(request));

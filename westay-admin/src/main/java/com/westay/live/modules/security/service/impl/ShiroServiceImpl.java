@@ -2,6 +2,7 @@
 package com.westay.live.modules.security.service.impl;
 
 import cn.hutool.core.util.StrUtil;
+import com.westay.live.modules.admin.enums.UserVipEnum;
 import com.westay.live.modules.security.dao.TokenDao;
 import com.westay.live.modules.security.entity.Token;
 import com.westay.live.modules.security.service.ShiroService;
@@ -29,7 +30,7 @@ public class ShiroServiceImpl implements ShiroService {
     public Set<String> getUserPermissions(UserDetail user) {
 
         List<String> permissionsList;
-        if (user.getVipUser() == UserStatusEnum.YES.value()) {
+        if (user.getVipUser() == UserVipEnum.YES.value()) {
             permissionsList = permissionDao.getPermissionsList();
         } else {
             permissionsList = permissionDao.getUserPermissionsList(user.getId());

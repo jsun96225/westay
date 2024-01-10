@@ -15,14 +15,22 @@ import java.util.Date;
 @TableName("users")
 public class User extends BaseEntity {
     private static final long serialVersionUID = 1L;
-    @TableId
-    private Long id;
 
     private String username;
 
     private String password;
 
     private Integer gender;
+
+    private String lastname;
+
+    private String firstname;
+
+    private String email;
+
+    private String headUrl;
+
+    private String phone;
 
     @TableField(fill = FieldFill.INSERT)
     private Date createTime;

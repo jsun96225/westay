@@ -39,4 +39,27 @@ public interface UserDao extends BaseDao<User> {
      * @return 用户总数
      */
     int countByRoleId(@Param("roleId") Long roleId);
+
+    /**
+     * 增加用户积分
+     * @param userId 用户ID
+     * @param points 增加的积分数
+     */
+    void addPoints(@Param("userId") Long userId, @Param("points") int points);
+
+    /**
+     * 减少用户积分
+     * @param userId 用户ID
+     * @param points 减少的积分数
+     */
+    void subtractPoints(@Param("userId") Long userId, @Param("points") int points);
+
+    /**
+     * 更新用户积分
+     * @param userId 用户ID
+     * @param points 新的积分数
+     */
+    void updatePoints(@Param("userId") Long userId, @Param("points") int points);
+
+
 }

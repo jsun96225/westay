@@ -1,8 +1,8 @@
 package com.westay.live.modules.admin.enums;
 
 public enum UserStatusEnum {
-    YES(1),
-    NO(0);
+    DISABLE(0),
+    ENABLED(1);
 
     private int value;
 
