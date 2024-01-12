@@ -134,4 +134,10 @@ INSERT INTO roles (name) VALUES ('游客'), ('普通用户'), ('VIP');
 
 
 -- 初始化权限数据（根据实际需求调整）
-INSERT INTO permissions (name) VALUES ('访问城市卡'), ('查看评论'), ('发表评论'), ('编辑个人信息'), ('签证咨询'), ('一对一客服');
+INSERT INTO permissions (name) VALUES
+                                   ('access:citycard'),
+                                   ('view:comments'),
+                                   ('post:comments'),
+                                   ('edit:profile'),
+                                   ('access:visaconsult'),
+                                   ('access:customerservice');

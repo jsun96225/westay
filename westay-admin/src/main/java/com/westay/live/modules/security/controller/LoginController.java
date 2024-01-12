@@ -16,6 +16,8 @@ import com.westay.live.modules.security.dto.LoginDTO;
 import com.westay.live.modules.security.password.PasswordUtils;
 import com.westay.live.modules.security.service.CaptchaService;
 import com.westay.live.modules.security.service.SysUserTokenService;
+import com.westay.live.modules.security.user.SecurityUser;
+import com.westay.live.modules.security.user.UserDetail;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -110,6 +112,29 @@ public class LoginController {
         sysLogLoginService.save(log);
 
         return sysUserTokenService.createToken(user.getId());
+    }
+
+    @PostMapping("logout")
+    @ApiOperation(value = "退出")
+    public Result logout(HttpServletRequest request) {
+        UserDetail user = SecurityUser.getUser();
+
+        //退出
+        sysUserTokenService.logout(user.getId());
+
+        //用户信息
+        LoginLog log = new LoginLog();
+        log.setOperation(LoginOperationEnum.LOGOUT.value());
+        log.setIp(IpUtils.getIpAddr(request));
+        log.setUserAgent(request.getHeader(HttpHeaders.USER_AGENT));
+        log.setIp(IpUtils.getIpAddr(request));
+        log.setStatus(LoginStatusEnum.SUCCESS.value());
+        log.setCreator(user.getId());
+        log.setCreatorName(user.getUsername());
+        log.setCreateDate(new Date());
+        sysLogLoginService.save(log);
+
+        return new Result();
     }
 
 }

@@ -18,6 +18,11 @@ public class UserDetail implements Serializable {
     private String username;
     private String password;
     private Integer gender;
+    private String lastname;
+    private String firstname;
+    private String headUrl;
+    private String email;
+    private String phone;
     private Date createTime;
     private Date updateTime;
     private Integer points;

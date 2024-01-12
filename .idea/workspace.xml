@@ -4,24 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ac30510-32be-4ab2-a695-9f7c358019d1" name="Changes" comment="Log-done">
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/enums/UserVipEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/service/Impl/UserRoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/service/UserRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/utils/IpUtils.java" afterDir="false" />
+    <list default="true" id="4ac30510-32be-4ab2-a695-9f7c358019d1" name="Changes" comment="LoginDone">
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/dto/PermissionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/dto/RoleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/excel/SysParamsExcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/excel/SysUserExcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/excel/converter/GenderConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/excel/converter/StatusConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/service/Impl/PermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/service/Impl/RolePermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/service/Impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/service/PermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/service/RolePermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/security/user/SecurityUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/westay-admin/database/MySQL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/database/MySQL.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/dao/UserRoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/dao/UserRoleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/enums/UserStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin/enums/UserStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/service/SysLogErrorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/service/SysLogErrorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/security/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/security/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/security/service/impl/ShiroServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/security/service/impl/ShiroServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/service/impl/BaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-common/src/main/java/com/westay/common/service/impl/BaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/security/user/UserDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/security/user/UserDetail.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,53 +86,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "/Users/jialongsun/Desktop/WeStay/westay-admin/src/main/java/com/westay/live/modules/log",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/jialongsun/Desktop/WeStay/westay-dynamic-datasource/src/main/java/com/westay/live/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jialongsun/Desktop/WeStay/westay-admin/src/main/java/com/westay/live/modules/admin&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/jialongsun/Desktop/WeStay/westay-dynamic-datasource/src/main/java/com/westay/live/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "redshift",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redshift&quot;,
+      &quot;mysql&quot;
     ],
-    "RunConfigurationTargetLRU": [
-      "65d4cc5a-91c2-4762-8748-ff84ee24b100/schema/\"westay\""
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;65d4cc5a-91c2-4762-8748-ff84ee24b100/schema/\&quot;westay\&quot;&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/admin" />
       <recent name="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log" />
       <recent name="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/common" />
       <recent name="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/controller" />
       <recent name="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/dto" />
-      <recent name="$PROJECT_DIR$/westay-admin/src/main/java/com/westay/live/modules/log/excel" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.westay.common.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.westay.live.modules.security.user" />
+      <recent name="com.westay.live.modules.admin.redis" />
+      <recent name="com.westay.live.modules.admin.dto" />
       <recent name="com.westay.common.utils" />
       <recent name="com.westay.live.modules.security.dto" />
-      <recent name="com.westay.live.modules.admin.dto" />
-      <recent name="com.westay.live.modules.security.oauth2" />
-      <recent name="com.westay.datasource.config" />
     </key>
   </component>
   <component name="RunManager" selected="Database Script.MySQL.sql">
@@ -170,7 +174,8 @@
       <workItem from="1701395525340" duration="11979000" />
       <workItem from="1701917643636" duration="11732000" />
       <workItem from="1701939560347" duration="10931000" />
-      <workItem from="1702858202621" duration="86559000" />
+      <workItem from="1702858202621" duration="104914000" />
+      <workItem from="1705039290690" duration="1482000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -268,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704416003959</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="LoginDone">
+      <option name="closed" value="true" />
+      <created>1704851111232</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1704851111232</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +307,7 @@
     <MESSAGE value="entity" />
     <MESSAGE value="log-dao-dto" />
     <MESSAGE value="Log-done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Log-done" />
+    <MESSAGE value="LoginDone" />
+    <option name="LAST_COMMIT_MESSAGE" value="LoginDone" />
   </component>
 </project>
